@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D7440686651873D8978B8D4A26DE34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		0AE81015A6A9845B743EE46F48EDA359 /* BSStackViewConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = A279EE08ADE1665F526066FA39647B8D /* BSStackViewConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		145C63021061C809CB4FD6355D8EC215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		199927B55DBBBE3029742B0F69189D42 /* BSStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C4F19F9A3F569217245860168790BB /* BSStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2305B61B5B218F0ED52D88F2A62F5E97 /* BSStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A6DB4991188173219663B2393E52B4 /* BSStackView-dummy.m */; };
+		287FD5CDCA228729C0353CA96A9762C2 /* BSStackViewConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FD34CA5169F63CE84480B343306AF /* BSStackViewConstraints.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4DADEA6DC1FDD57E0D5C0F8B315F0BC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D923F5C1052B50CA1883CA42419E48AC /* UIKit.framework */; };
+		5300B4D889BA23329976660CB29AF8ED /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140A951EBA39461EC59B08FB6D14A79 /* EXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77344BB1F6B5A8CDA831B03DB292D091 /* BSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FD4B0B99A891F53A8CB8A30AB804C1 /* BSStackView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7745BDD8DE2E2A0DE129670E748A0A66 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA159B0CC73805F995F435D691595B2 /* SystemConfiguration.framework */; };
+		7ED99B439D785E171BEB1603980A2A6A /* Pods-BSStackView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A69F99339634F67409DC5783F1C7F8 /* Pods-BSStackView_Example-dummy.m */; };
+		81E1D866A14FE2BDEA0416FFC562B165 /* BSStackViewLayoutHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E90DB204C41B3CA23F9565594C7E4B87 /* BSStackViewLayoutHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A072D58ACD099A1E2E8A3C38AAD52DBA /* BSStackViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE34A6DE94EBFDF25EC0F4891F7B504 /* BSStackViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9C1F2FAE7743EF15355A2DF19BBDBE /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A95EC75C5769823299973193D8DA3A5 /* metamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB466A4E9A71F221B137276897B02AED /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 065C92B942475F54FF40C029EA2AFC05 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D04837EC92035C4E2FBC31A6E17D2BF5 /* BSStackViewLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D538B32ADADCC91A6655DE198898C98 /* BSStackViewLayoutHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1521D4B3D7635EB48B4283A437E0369D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E134C4723F48093F1423ABD4CE34DB;
+			remoteInfo = BSStackView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065C92B942475F54FF40C029EA2AFC05 /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = BSStackView/Weakify/EXTScope.m; sourceTree = "<group>"; };
+		0CA159B0CC73805F995F435D691595B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0E3E09C48197A7C48433162237DD2996 /* libBSStackView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBSStackView.a; path = libBSStackView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D538B32ADADCC91A6655DE198898C98 /* BSStackViewLayoutHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSStackViewLayoutHelper.m; path = BSStackView/BSStackViewLayoutHelper.m; sourceTree = "<group>"; };
+		20A6DB4991188173219663B2393E52B4 /* BSStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSStackView-dummy.m"; sourceTree = "<group>"; };
+		2140A951EBA39461EC59B08FB6D14A79 /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = BSStackView/Weakify/EXTScope.h; sourceTree = "<group>"; };
+		2DE34A6DE94EBFDF25EC0F4891F7B504 /* BSStackViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSStackViewProtocol.h; path = BSStackView/BSStackViewProtocol.h; sourceTree = "<group>"; };
+		43C4F19F9A3F569217245860168790BB /* BSStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSStackView.h; path = BSStackView/BSStackView.h; sourceTree = "<group>"; };
+		45FD4B0B99A891F53A8CB8A30AB804C1 /* BSStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSStackView.m; path = BSStackView/BSStackView.m; sourceTree = "<group>"; };
+		4A95EC75C5769823299973193D8DA3A5 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = BSStackView/Weakify/metamacros.h; sourceTree = "<group>"; };
+		7C8FD34CA5169F63CE84480B343306AF /* BSStackViewConstraints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSStackViewConstraints.m; path = BSStackView/BSStackViewConstraints.m; sourceTree = "<group>"; };
+		8111CCA41539E83F267B3230211255F1 /* libPods-BSStackView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BSStackView_Example.a"; path = "libPods-BSStackView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92885B1914DB641E83AE437F90DF942F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CEE7A5C7E488F76FB6FFCE551F7B1FA /* Pods-BSStackView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSStackView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A279EE08ADE1665F526066FA39647B8D /* BSStackViewConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSStackViewConstraints.h; path = BSStackView/BSStackViewConstraints.h; sourceTree = "<group>"; };
+		BED4EDE6C8609499362C0B01BC82253F /* Pods-BSStackView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSStackView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A69F99339634F67409DC5783F1C7F8 /* Pods-BSStackView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BSStackView_Example-dummy.m"; sourceTree = "<group>"; };
+		C8C24DB41595E0E618E80D8D384AE61B /* Pods-BSStackView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BSStackView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3742B66DDB01BE35013F0D12C2B35F1 /* BSStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSStackView.xcconfig; sourceTree = "<group>"; };
+		D58E298A27E45541DFC017284EB57A64 /* Pods-BSStackView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSStackView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D923F5C1052B50CA1883CA42419E48AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E3A90F0A1A15D52D661104398D9C5CB2 /* BSStackView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSStackView-prefix.pch"; sourceTree = "<group>"; };
+		E8F32A7D62974C8644C49CB2BC39C858 /* Pods-BSStackView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSStackView_Example-resources.sh"; sourceTree = "<group>"; };
+		E90DB204C41B3CA23F9565594C7E4B87 /* BSStackViewLayoutHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSStackViewLayoutHelper.h; path = BSStackView/BSStackViewLayoutHelper.h; sourceTree = "<group>"; };
+		F009F09F8D624E6EEDF02B350CB0A806 /* Pods-BSStackView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSStackView_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		759DFEF2C5214B97AA66ECEAB04EE7FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D7440686651873D8978B8D4A26DE34 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E3A76E1502D7F375F2E986406502C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145C63021061C809CB4FD6355D8EC215 /* Foundation.framework in Frameworks */,
+				7745BDD8DE2E2A0DE129670E748A0A66 /* SystemConfiguration.framework in Frameworks */,
+				4DADEA6DC1FDD57E0D5C0F8B315F0BC8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CA2B36EDEC7A93B258160F0B0473AA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C09E40CF4689295E821E35702D013DFB /* BSStackView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC70DAEB2DC573D6994EDA71F1ECB78 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E31461568C941FA72C1BAD759EF0DBB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3742B66DDB01BE35013F0D12C2B35F1 /* BSStackView.xcconfig */,
+				20A6DB4991188173219663B2393E52B4 /* BSStackView-dummy.m */,
+				E3A90F0A1A15D52D661104398D9C5CB2 /* BSStackView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BSStackView";
+			sourceTree = "<group>";
+		};
+		7CC70DAEB2DC573D6994EDA71F1ECB78 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				92885B1914DB641E83AE437F90DF942F /* Foundation.framework */,
+				0CA159B0CC73805F995F435D691595B2 /* SystemConfiguration.framework */,
+				D923F5C1052B50CA1883CA42419E48AC /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				0CA2B36EDEC7A93B258160F0B0473AA7 /* Pods */,
+				D4CB0B02CB62A1C016DCBC4587C4E700 /* Products */,
+				C1889BC923EBB0FE7C70F6A86E0510C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C09E40CF4689295E821E35702D013DFB /* BSStackView */ = {
+			isa = PBXGroup;
+			children = (
+				43C4F19F9A3F569217245860168790BB /* BSStackView.h */,
+				45FD4B0B99A891F53A8CB8A30AB804C1 /* BSStackView.m */,
+				A279EE08ADE1665F526066FA39647B8D /* BSStackViewConstraints.h */,
+				7C8FD34CA5169F63CE84480B343306AF /* BSStackViewConstraints.m */,
+				E90DB204C41B3CA23F9565594C7E4B87 /* BSStackViewLayoutHelper.h */,
+				1D538B32ADADCC91A6655DE198898C98 /* BSStackViewLayoutHelper.m */,
+				2DE34A6DE94EBFDF25EC0F4891F7B504 /* BSStackViewProtocol.h */,
+				2140A951EBA39461EC59B08FB6D14A79 /* EXTScope.h */,
+				065C92B942475F54FF40C029EA2AFC05 /* EXTScope.m */,
+				4A95EC75C5769823299973193D8DA3A5 /* metamacros.h */,
+				3E31461568C941FA72C1BAD759EF0DBB /* Support Files */,
+			);
+			name = BSStackView;
+			path = BSStackView;
+			sourceTree = "<group>";
+		};
+		C1889BC923EBB0FE7C70F6A86E0510C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBD56A47AADB238BA29CA886116B7688 /* Pods-BSStackView_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D4CB0B02CB62A1C016DCBC4587C4E700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E3E09C48197A7C48433162237DD2996 /* libBSStackView.a */,
+				8111CCA41539E83F267B3230211255F1 /* libPods-BSStackView_Example.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBD56A47AADB238BA29CA886116B7688 /* Pods-BSStackView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C8C24DB41595E0E618E80D8D384AE61B /* Pods-BSStackView_Example-acknowledgements.markdown */,
+				D58E298A27E45541DFC017284EB57A64 /* Pods-BSStackView_Example-acknowledgements.plist */,
+				C0A69F99339634F67409DC5783F1C7F8 /* Pods-BSStackView_Example-dummy.m */,
+				F009F09F8D624E6EEDF02B350CB0A806 /* Pods-BSStackView_Example-frameworks.sh */,
+				E8F32A7D62974C8644C49CB2BC39C858 /* Pods-BSStackView_Example-resources.sh */,
+				BED4EDE6C8609499362C0B01BC82253F /* Pods-BSStackView_Example.debug.xcconfig */,
+				9CEE7A5C7E488F76FB6FFCE551F7B1FA /* Pods-BSStackView_Example.release.xcconfig */,
+			);
+			name = "Pods-BSStackView_Example";
+			path = "Target Support Files/Pods-BSStackView_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		397DE76BDDB44E22639D026D0D0E983F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199927B55DBBBE3029742B0F69189D42 /* BSStackView.h in Headers */,
+				0AE81015A6A9845B743EE46F48EDA359 /* BSStackViewConstraints.h in Headers */,
+				81E1D866A14FE2BDEA0416FFC562B165 /* BSStackViewLayoutHelper.h in Headers */,
+				A072D58ACD099A1E2E8A3C38AAD52DBA /* BSStackViewProtocol.h in Headers */,
+				5300B4D889BA23329976660CB29AF8ED /* EXTScope.h in Headers */,
+				CA9C1F2FAE7743EF15355A2DF19BBDBE /* metamacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C0E134C4723F48093F1423ABD4CE34DB /* BSStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7A8006DA03A075E395CD4B25EA8682 /* Build configuration list for PBXNativeTarget "BSStackView" */;
+			buildPhases = (
+				3EDC74E879C45492F934808D4F8377AF /* Sources */,
+				B1E3A76E1502D7F375F2E986406502C6 /* Frameworks */,
+				397DE76BDDB44E22639D026D0D0E983F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSStackView;
+			productName = BSStackView;
+			productReference = 0E3E09C48197A7C48433162237DD2996 /* libBSStackView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CD4785EBF5842F5E1161809F8685725A /* Pods-BSStackView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 321AB9518D883078283E05BAA79A62FF /* Build configuration list for PBXNativeTarget "Pods-BSStackView_Example" */;
+			buildPhases = (
+				3E03D2427F0F5F7F53BB45E1013DB385 /* Sources */,
+				759DFEF2C5214B97AA66ECEAB04EE7FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5654087E238D40E3BE2EAAC581F1D98 /* PBXTargetDependency */,
+			);
+			name = "Pods-BSStackView_Example";
+			productName = "Pods-BSStackView_Example";
+			productReference = 8111CCA41539E83F267B3230211255F1 /* libPods-BSStackView_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D4CB0B02CB62A1C016DCBC4587C4E700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0E134C4723F48093F1423ABD4CE34DB /* BSStackView */,
+				CD4785EBF5842F5E1161809F8685725A /* Pods-BSStackView_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E03D2427F0F5F7F53BB45E1013DB385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED99B439D785E171BEB1603980A2A6A /* Pods-BSStackView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EDC74E879C45492F934808D4F8377AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2305B61B5B218F0ED52D88F2A62F5E97 /* BSStackView-dummy.m in Sources */,
+				77344BB1F6B5A8CDA831B03DB292D091 /* BSStackView.m in Sources */,
+				287FD5CDCA228729C0353CA96A9762C2 /* BSStackViewConstraints.m in Sources */,
+				D04837EC92035C4E2FBC31A6E17D2BF5 /* BSStackViewLayoutHelper.m in Sources */,
+				CB466A4E9A71F221B137276897B02AED /* EXTScope.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5654087E238D40E3BE2EAAC581F1D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSStackView;
+			target = C0E134C4723F48093F1423ABD4CE34DB /* BSStackView */;
+			targetProxy = 1521D4B3D7635EB48B4283A437E0369D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		581D3CFEC37F09B3DBB7938F72FAF149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3742B66DDB01BE35013F0D12C2B35F1 /* BSStackView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BSStackView/BSStackView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7131103F1F422CDAD49EABD668F095BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED4EDE6C8609499362C0B01BC82253F /* Pods-BSStackView_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CDD31C340F08C1E832E23045011746CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3742B66DDB01BE35013F0D12C2B35F1 /* BSStackView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BSStackView/BSStackView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FA24CC9D6B53EB42B497D3E3F836C9BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEE7A5C7E488F76FB6FFCE551F7B1FA /* Pods-BSStackView_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		321AB9518D883078283E05BAA79A62FF /* Build configuration list for PBXNativeTarget "Pods-BSStackView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7131103F1F422CDAD49EABD668F095BC /* Debug */,
+				FA24CC9D6B53EB42B497D3E3F836C9BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7A8006DA03A075E395CD4B25EA8682 /* Build configuration list for PBXNativeTarget "BSStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD31C340F08C1E832E23045011746CD /* Debug */,
+				581D3CFEC37F09B3DBB7938F72FAF149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
