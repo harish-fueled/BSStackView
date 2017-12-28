@@ -15,6 +15,7 @@ static CGFloat const BSStackViewConstraintsBottomDefault = 140.;
 static CGFloat const BSStackViewConstraintsCompressionHorizontalDefault = 10.;
 static CGFloat const BSStackViewConstraintsCompressionVerticalDefault = 10.;
 
+
 @implementation BSStackViewConstraints
 
 - (instancetype)init {
@@ -39,31 +40,30 @@ static CGFloat const BSStackViewConstraintsCompressionVerticalDefault = 10.;
 }
 
 - (NSArray *)horizontalConstraintsForView:(UIView *)view index:(NSInteger)index {
-    CGFloat leading = self.leading + self.horizontalCompression * index;
-    CGFloat trailing = self.trailing + self.horizontalCompression * index;
-    
-    return [self horizontalConstraintsForView:view leading:leading trailing:trailing];
+	CGFloat padding = self.horizontalCompression * index;
+	CGFloat actualPadding = (index == 2) ? padding : -padding;
+	CGFloat leading = self.leading + actualPadding;
+	CGFloat trailing = self.trailing - actualPadding;
+	return [self horizontalConstraintsForView:view leading:leading trailing:trailing];
 }
 
 - (NSArray *)horizontalConstraintsForView:(UIView *)view leading:(CGFloat)leading trailing:(CGFloat)trailing {
-    NSDictionary *views = NSDictionaryOfVariableBindings(view);
-    NSString *format = [NSString stringWithFormat:@"H:|-(%.f)-[view]-(%.f)-|", leading, trailing];
-    
-    return [NSLayoutConstraint constraintsWithVisualFormat:format options:0 metrics:nil views:views];
+	NSDictionary *views = NSDictionaryOfVariableBindings(view);
+	NSString *format = [NSString stringWithFormat:@"H:|-(%.f)-[view]-(%.f)-|", leading, trailing];
+	return [NSLayoutConstraint constraintsWithVisualFormat:format options:0 metrics:nil views:views];
 }
 
 - (NSArray *)verticalConstraintsForView:(UIView *)view index:(NSInteger)index {
-    CGFloat top = self.top + self.verticalCompression * index;
-    CGFloat bottom = self.bottom - self.verticalCompression * index;
-    
-    return [self verticalConstraintsForView:view top:top bottom:bottom];
+	CGFloat top = self.top + self.verticalCompression * index;
+	CGFloat bottom = self.bottom + self.verticalCompression * index;
+
+	return [self verticalConstraintsForView:view top:top bottom:bottom];
 }
 
 - (NSArray *)verticalConstraintsForView:(UIView *)view top:(CGFloat)top bottom:(CGFloat)bottom {
-    NSDictionary *views = NSDictionaryOfVariableBindings(view);
-    NSString *format = [NSString stringWithFormat:@"V:|-(%.f)-[view]-(%.f)-|", top, bottom];
-    
-    return [NSLayoutConstraint constraintsWithVisualFormat:format options:0 metrics:nil views:views];
+	NSDictionary *views = NSDictionaryOfVariableBindings(view);
+	NSString *format = [NSString stringWithFormat:@"V:|-(%.f)-[view]-(%.f)-|", top, bottom];
+	return [NSLayoutConstraint constraintsWithVisualFormat:format options:0 metrics:nil views:views];
 }
 
 @end

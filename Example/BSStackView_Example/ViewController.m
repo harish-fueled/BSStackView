@@ -21,14 +21,14 @@
     [super viewDidLoad];
     
     NSMutableArray *views = [NSMutableArray array];
-    for (NSInteger i = 0; i < 5; i++) {
+    for (NSInteger i = 0; i < 3; i++) {
         [views addObject:[self viewWithLabel:i]];
     }
     
     self.stackView.swipeDirections = UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown;
     self.stackView.forwardDirections = UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionUp;
     self.stackView.backwardDirections = UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionDown;
-    self.stackView.changeAlphaOnSendAnimation = YES;
+    self.stackView.changeAlphaOnSendAnimation = NO;
     [self.stackView configureWithViews:views];
     self.stackView.delegate = self;
 }

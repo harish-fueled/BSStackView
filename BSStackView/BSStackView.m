@@ -10,9 +10,9 @@
 #import "EXTScope.h"
 #import "BSStackViewLayoutHelper.h"
 
-static CGFloat const BSStackViewMinAlpha = .9;
-static CGFloat const BSStackViewMinBackgroundWhite = .7;
-static CGFloat const BSStackViewAnimationDurationDefault = .25;
+static CGFloat const BSStackViewMinAlpha = 1.0;
+static CGFloat const BSStackViewMinBackgroundWhite = 1.0;
+static CGFloat const BSStackViewAnimationDurationDefault = 0.4;
 
 @interface BSStackView ()
 
@@ -49,7 +49,7 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
     }
     
     self.gestures = gestures;
-    
+
     [self enableGestures:self.views.count > 0];
 }
 
@@ -78,7 +78,18 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
     [self removeAllViews];
     
     self.views = views;
-    
+
+	for (NSInteger i = 0; i < 3; i++) {
+		UIView *view = [self.views objectAtIndex:i];
+		if (i == 0) {
+			[view setBackgroundColor: [UIColor grayColor]];
+		} else if (i == 1)  {
+			[view setBackgroundColor: [UIColor greenColor]];
+		} else {
+			[view setBackgroundColor: [UIColor redColor]];
+		}
+	}
+
     [self enableGestures:views.count > 0];
     [self removeAllConstraints];
     
@@ -143,8 +154,6 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
     
     NSArray *oldConstraints = self.viewConstraints[@(view.tag)];
     view.alpha = [self calculateAlphaForIndex:index];
-    view.backgroundColor = [UIColor colorWithWhite:[self calculateBackgroundWhiteForIndex:index] alpha:1.];
-    
     NSArray *contraints = [self.contraintsConfigurator constraintsForView:view index:index];
     [self removeConstraints:oldConstraints];
     [self addConstraints:contraints];
@@ -152,7 +161,7 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
 }
 
 - (CGFloat)calculateAlphaForIndex:(NSInteger)index {
-    return (1. - BSStackViewMinAlpha) / self.views.count * (self.views.count - index) + BSStackViewMinAlpha;
+	return 1.0;
 }
 
 - (CGFloat)calculateBackgroundWhiteForIndex:(NSInteger)index {
@@ -208,15 +217,15 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
     NSInteger index = forward ? self.views.count - 1 : 0;
     [self updateViewAtIndex:index];
     if (self.changeAlphaOnSendAnimation) {
-        view.alpha = 0.;
+        view.alpha = 0.0;
     }
     
-    if (forward) {
-        [self sendSubviewToBack:view];
-    } else {
+//    if (forward) {
+//        [self sendSubviewToBack:view];
+//    } else {
         [self bringSubviewToFront:view];
-    }
-    
+//    }
+
     @weakify(self);
     [UIView animateWithDuration:self.animationDuration animations:^{
         @strongify(self);
@@ -229,6 +238,7 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
         if (self.delegate && [self.delegate respondsToSelector:@selector(stackView:didSendItem:direction:)]) {
             BSStackViewItemDirection direction = forward ? BSStackViewItemDirectionBack : BSStackViewItemDirectionFront;
             [self.delegate stackView:self didSendItem:view direction:direction];
+//			[self updateViews];
         }
     }];
 }
@@ -242,14 +252,19 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
 }
 
 - (BOOL)isForwardDirection:(UISwipeGestureRecognizerDirection)direction {
-    return direction & self.forwardDirections;
+	return false;
+//    return direction & self.forwardDirections;
 }
 
 - (void)swipe:(UISwipeGestureRecognizer *)gesture {
     [self checkDirections];
     BOOL forward = [self isForwardDirection:gesture.direction];
-    UIView *view = forward ? self.views.firstObject : self.views.lastObject;
-    
+	UIView *view = self.views.lastObject;
+	if (gesture.direction == UISwipeGestureRecognizerDirectionRight) {
+		view = self.views[1];
+	}
+//    UIView *view = forward ? self.views.firstObject : self.views.lastObject;
+
     if (self.delegate && [self.delegate respondsToSelector:@selector(stackView:willSendItem:direction:)]) {
         BSStackViewItemDirection direction = forward ? BSStackViewItemDirectionBack : BSStackViewItemDirectionFront;
         [self.delegate stackView:self willSendItem:view direction:direction];
@@ -268,8 +283,8 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
     self.views = views;
     
     self.dontUpdateItem = view;
-    [self updateViews];
-    
+//    [self updateViews];
+
     @weakify(self);
     [UIView animateWithDuration:self.animationDuration animations:^{
         @strongify(self);
@@ -279,6 +294,7 @@ static CGFloat const BSStackViewAnimationDurationDefault = .25;
         [self layoutIfNeeded];
     } completion:^(BOOL finished) {
         @strongify(self);
+		[self updateViews];
         [self sendViewAnimationCompletion:gesture.direction];
     }];
 }
